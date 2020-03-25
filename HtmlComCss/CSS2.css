@@ -1,8 +1,55 @@
+/* A prioridade é sempre a classe porém se colocar o elemento e a classe muda isso exemplo 
+p{
+    background-color: green;
+}
+
+.teste {
+    background-color: yellow;
+}
+
+p.teste {
+    background-color: aqua;
+}
+https://specificity.keegan.st/ mostrar nesse site
+*/
+ 
+
 body {
     background-color: rgba(200, 200, 200, 0.938);
+    margin: 0px;
+    padding: 0px;
+    
+    
 }
 header {
     padding: 20px 20px 10px 10px;
     text-align: center;
-    
+    background-color: rgb(35, 199, 221);
+    border-radius: 40px;
+}
+.principal {
+    margin: 10px
+}
+
+/* * {
+    border: rgb(243, 16, 16) solid 3px;
+} */
+
+.principal {
+    color: blue;
+} */
+
+h2,h3,h4,h5,h6 {
+    margin: 10px;
+    padding: 15px;
+    color: tomato;
+}
+
+p {
+    margin: 30px;
+}
+
+#Hello {
+    text-align: center;
+    background: linear-gradient(to right, red ,blue);
 }
