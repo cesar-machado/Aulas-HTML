@@ -1,0 +1,53 @@
+<body>
+  <form action="">
+    <label>Usuário</label>
+    <input type="email" id="usuario" />
+    <label for="password">Senha</label>
+    <input type="password" id="Senha" onkeypress="" invalid/>
+    <button >Clique aqui</button>
+    <input type="checkbox" id="cb1" /><span>Lembrar-me </span>
+  </form>
+
+  <style>
+    span {
+      color: red;
+    }
+    input:checked + span {
+      color: blue;
+    }
+    input[type="password"],
+    input[type="email"] {
+      display: block;
+    }
+    form {
+      display: block;
+      position: absolute;
+      top: 40%;
+      left: 40%;
+    }
+    input:focus{
+      background-color: rgba(189, 192, 191, 0.554);
+    
+    }
+
+    button:hover {
+        color: blue
+    }
+
+    input:invalid {
+        color: red;
+    }
+
+    input:valid {
+        color: blue;
+    }
+  </style>
+</body>
+
+<!-- The event handler attributes: onabort, onautocomplete, onautocompleteerror, onblur, oncancel, oncanplay, 
+    oncanplaythrough, onchange, onclick, onclose, oncontextmenu, oncuechange, ondblclick, ondrag, ondragend, ondragenter, 
+    ondragexit, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, oninput,
+     oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmousedown, onmouseenter, 
+     onmouseleave, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onpause, onplay, onplaying, onprogress, onratechange, 
+     onreset, onresize, onscroll, onseeked, onseeking, onselect, onshow, onsort, onstalled, onsubmit, onsuspend, ontimeupdate, ontoggle, 
+     onvolumechange, onwaiting.-->
