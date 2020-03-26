@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fonte e medidas</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+        p {
+            /* valores padrões */
+            font-size: 1em; /* lembrar quem em é relativo se eu mudar a medida de px da font na div ela leva isso como padrão*/
+            font-size: 100%;
+            font-size: 16px;
+            font-size: 12pt;
+            /* font-size: 100px; */
+
+
+            font-family: monospace;
+            font-family: georgia,serif; /* se ele não achar a primeira vai para segunda */
+            font-family: 'Roboto Condensed', cursive; /* lembrar de pegar a tag no google fonts */
+            
+            font-weight: bold; /* pode ser coloca por numero tambem*/ 
+            font-weight: italic;
+
+            word-spacing: 20px;
+            line-height: 2.5em;
+            text-align: center;
+        }
+
+        .botao {
+            font-size: 28px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 25px;
+            position: absolute;
+            left: 600px;
+            /* o jeito mais facil seria flex porém ainda na expliquei */
+
+        }
+
+        .destaque {
+            color: #ffffff;
+            background: coral;
+            box-shadow: 2px 2px 1px 1px #000;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p> Olha a fonte
+            <br> Show! <br>
+            <a  href="https://www.google.com.br" class="botao destaque">google</a>
+        </p> 
+        
+           
+    </div>
+</body>
+</html>
