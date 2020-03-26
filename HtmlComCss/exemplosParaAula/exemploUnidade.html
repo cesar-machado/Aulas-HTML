@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .fora {
+            position: relative;
+            background-color: orange;
+            height: 400px;
+            width: 400px;
+            /* padding: 50px; */
+            /* Mostrar um por um mostrando que a largura vem 100% depois ajustando */
+        }
+
+        .dentro {
+            background-color: orchid;
+            height: 100px;
+            width: 100%;
+            position: static; /* position padrão e a parte do conteudo pq ele esta dentro da div*/
+            position: absolute; /* comportamento diferente de % com paddin mostrar tirando e colocando*/
+        }
+    </style>
+</head>
+<body>
+    <div class="fora">
+        <div class="dentro"></div>
+    </div>
+</body>
+</html>

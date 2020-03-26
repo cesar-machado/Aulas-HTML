@@ -27,6 +27,9 @@ font
 
 
 % percentual é relativo
+por padrão a div ja tem a largura 100%
+porém não tem altura 100%
+display: block padrão.
 
 
 
