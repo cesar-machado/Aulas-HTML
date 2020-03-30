@@ -1,23 +1,27 @@
 body {
     margin: 0px;
     padding: 0px;
-
 }
 
 h1 {
     background-color: blue;
     margin-top: 0px;
     text-align: center;
+    color: #fff;
 }
 
 
 
-/*a {
+a {
     margin-left: 20px;
-    /*text-decoration: none;
+    text-decoration: none;
     color: #000;
-}*/
+    display: inline-block;
+    margin: 10px;
+}
 
 footer {
     margin-top: 30px;
+    text-align: center;
+    color: rgb(34, 30, 255);
 }
