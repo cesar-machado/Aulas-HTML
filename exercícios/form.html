@@ -1,26 +1,87 @@
+<head>
+  <style>
+    * {
+       margin: 0px; 
+    }
+    #parte {
+      display: block;
+    }
+    div {
+      margin: 10px;
+    }
+
+    ::-webkit-input-placeholder {
+      color: rgb(241, 23, 23)
+    }
+
+    ::-moz-placeholder {
+      color: rgb(241, 23, 23);
+      font-weight: bold;
+    }
+
+    body {
+      background-color: rgba(42, 42, 42, 0.363);
+    }
+
+    h1 {
+      text-align: center;
+      background-color: rgba(102, 102, 102, 0.575);
+    }
+
+    input,
+    textarea,
+    select {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      display: inline;
+      margin: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      display: inline-block;
+    }
+
+    .endereco {
+      margin: 10px;
+    }
+    button {
+      margin: 10px;
+      background-color: rgb(213, 213, 243);
+      border-radius: 10px;
+    }
+    
+  </style>
+</head>
 <body>
   <h1>Formulário</h1>
   <form>
     <input type="hidden" name="id" value="3" />
     <!-- Escondido -->
-    
-    <label for="nome">Nome </label>
-    <input type="text" name="nome" placeholder="Nome Completo" />
-    <label for="senha">Senha</label>
-    <input type="password" name="senha" placeholder="Senha" />
-    <label for="email">E-mail</label>
-    <input type="email" name="email" placeholder="E-mail" />
-    <label for="contato">Contato</label>
-    <input type="text" name="contato" placeholder="N° do tel ou cel" />
+    <div id="parte1">
+      <!-- <label for="nome">Nome </label> -->
+      <input type="text" name="nome" placeholder="Nome Completo" size="30px"/>
+      <!-- <label for="senha">Senha</label> -->
+      <input type="password" name="senha" placeholder="Senha" size="30px"/>
+      <!-- <label for="email">E-mail</label> -->
+      <input type="email" name="email" placeholder="E-mail" size="30px"/>
+      <!-- <label for="contato">Contato</label> -->
+      <input type="text" name="contato" placeholder="N° do tel ou cel" size="30px"/>
+    </div>
     <div class="endereco">
-      <label for="rua">Endereço</label>
-      <input type="text" name="rua" placeholder="Endereço" />
-      <label for="bairro">Bairro</label>
-      <input type="text" name="bairro" placeholder="Bairro" />
-      <label for="cidade">Cidade</label>
-      <input type="text" name="cidade" placeholder="Cidade" />
-      <label for="cep">Cep</label>
-      <input type="text" name="cep" placeholder="Cep" />
+      <!-- <label for="rua">Endereço</label> -->
+      <input type="text" name="rua" placeholder="Endereço" size="30px"/>
+      <!-- <label for="bairro">Bairro</label> -->
+      <input type="text" name="bairro" placeholder="Bairro"  size="30px"/>
+      <!-- <label for="cidade">Cidade</label> -->
+      <input type="text" name="cidade" placeholder="Cidade" size="30px"/>
+      <!-- <label for="cep">Cep</label> -->
+      <input type="text" name="cep" placeholder="Cep" size="30px"/>
       <select name="genero">
         <option value="">Selecione Gênero</option>
         <option value="M">M</option>
@@ -34,22 +95,23 @@
         rows="10"
         placeholder="Já fez cursos?"
       ></textarea>
-      
     </div>
-    <label for="cursos">Qual curso quer fazer?</label>
+    
     <div>
+      <label for="cursos">Qual curso quer fazer?</label><br>
       <!-- Lembra que se não colocar o msm name ele escolhe várias vezes -->
       <input type="radio" name="curso" value="pacote office" />Pacote Office
       <input type="radio" name="curso" value="excel" />Excel
       <input type="radio" name="curso" value="windows" />Windows
       <input type="radio" name="curso" value="linux" />Linux
     </div>
-    Conhece o instituto?
+    
     <div>
+      Conhece o instituto? <br>
       <input type="checkbox" name="sim" />Sim
       <input type="checkbox" name="nao" />Não
     </div>
-
+    <div>
     <select name="escolaridade" multiple size="5">
       <option value="efc">Ensino Fundamental Cursando</option>
       <option value="efcom">Ensino Fundamental Completo</option>
@@ -58,49 +120,9 @@
       <option value="esc">Ensino Superior Cursando</option>
       <option value="escom">Ensino Superior Completo</option>
     </select>
+  </div>
     <button>Inscrever</button>
     <button>alterar</button>
+  
   </form>
-
-  <style>
-    #parte {
-        display: block;
-    }
-    
-    body {
-      background-color: rgba(42, 42, 42, 0.363);
-    }
-    
-    h1 {
-        text-align: center;
-        background-color: rgba(102, 102, 102, 0.575);
-        margin: 0px;
-        
-    }
-
-    input,
-    textarea,
-    select {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    input[type="radio"],
-    input[type="checkbox"] {
-      display: inline;
-    }
-
-    input[type="text"],
-    input[type="password"],
-    input[type="email"] {
-      display: inline-block;
-    }
-
-    .endereco {
-      margin: 0;
-    }
-    * {
-      margin: 10px;
-    }
-  </style>
 </body>
