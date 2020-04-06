@@ -1,35 +1,44 @@
-<body>
-  <!-- Lembrar que input é muito utilizado em Form-->
-  <h1>Tipos de input</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipos de Input</title>
+    <style>
+      input[type="button"],
+      label,
+      button,
+      textarea {
+        display: block;
+        padding: 20px;
+        margin: 5px;
+      }
 
-  <label for="text">escreva aqui</label>
-  <input type="text" placeholder=" escreva aqui" />
-  <input type="checkbox" />
-  Confirme aqui
-  <textarea name="" id="" cols="10" rows="5"></textarea>
-  
-
-  <input type="button" value="Clique Aqui" />
-  <button>Clique aqui</button>
-
-  <input type="file" name="" id="" /> <br>
-  
-  <input type="radio" name="tipo" id="admin" />Admin
-  <input type="radio" name="tipo" id="aluno" />Aluno
-  <input type="radio" name="tipo" id="recepcao" />Recepção
-
-  <style>
-    input[type="button"],
-    label,
-    button,
-    textarea {
-      display: block;
-      padding: 20px;
-      margin: 5px;
-    }
-
-    input[type="radio"] {
+      input[type="radio"] {
         display: inline-block;
-    }
-  </style>
-</body>
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Lembrar que input é muito utilizado em Form-->
+    <h1>Tipos de input</h1>
+
+    <label for="text">escreva aqui</label>
+    <input type="text" placeholder=" escreva aqui" />
+    <input type="checkbox" />
+    Confirme aqui
+    <textarea name="" id="" cols="10" rows="5"></textarea>
+
+    <input type="button" value="Clique Aqui" />
+    <button>Clique aqui</button>
+
+    <input type="file" name="" id="" /> <br />
+
+    <input type="radio" name="tipo" id="admin" />Admin
+    <input type="radio" name="tipo" id="aluno" />Aluno
+    <input type="radio" name="tipo" id="recepcao" />Recepção
+
+    
+  </body>
+</html>
