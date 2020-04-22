@@ -1,58 +1,103 @@
 <head>
   <style>
     * {
-       margin: 0px; 
+       margin: 0px;
     }
-    #parte {
+    /* #parte {
       display: block;
-    }
-    div {
+    } */
+    /* div {
       margin: 10px;
-    }
-
-    ::placeholder {
-      color: red;
-    }
+    } */
 
 
     body {
-      background-color: rgba(42, 42, 42, 0.363);
+      background-color: #fce5d6;
     }
 
     h1 {
       text-align: center;
-      background-color: rgba(102, 102, 102, 0.575);
+      background-color: #FF7200;
+      align-content: center;
+      border-bottom: #140083 solid;
     }
 
-    input,
-    textarea,
-    select {
+    #inputs {
       display: block;
-      margin-bottom: 10px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    #inputs div {
+      margin: 20px;
+    }
+    #inputs label {
+      margin-right: 10px;
+
+    }
+
+    .genero {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    #area {
+      text-align: center;
+      margin-top: 30px;
       
     }
 
-    input[type="radio"],
-    input[type="checkbox"] {
-      display: inline;
+    .cursos {
+      text-align: center;
+      margin-top: 10px;
+      margin: 20px;
+    }
+
+    .cursos p {
+      margin-bottom: 10px;
+    }
+
+    .cursos input {
       margin: 10px;
     }
 
-    input[type="text"],
-    input[type="password"],
-    input[type="email"] {
-      display: inline-block;
+    #conhece {
+      text-align: center;
+      margin-top: 10px;
+      margin: 20px;
     }
 
-    .endereco {
-      margin: 10px;
+    #conhece p {
+      margin-bottom: 20px;
     }
+
+    #conhece input {
+      margin-left: 10px;
+    }
+    
+    .escolariedade {
+      text-align: center;
+      margin-top: 20px;
+    }
+     .btn {
+        text-align: center;
+        margin-top: 30px;
+     }
+    
+    
     button {
       margin: 10px;
       background-color: rgb(213, 213, 243);
       border-radius: 10px;
     }
+
+    button:hover{
+      background-color: #FFEF00;
+    }
+     
     
+
+
   </style>
 </head>
 <body>
@@ -60,66 +105,86 @@
   <form>
     <input type="hidden" name="id" value="3" />
     <!-- Escondido -->
-    <div id="parte1">
-      <!-- <label for="nome">Nome </label> -->
-      <input type="text" name="nome" placeholder="Nome Completo" size="30px"/>
-      <!-- <label for="senha">Senha</label> -->
-      <input type="password" name="senha" placeholder="Senha" size="30px"/>
-      <!-- <label for="email">E-mail</label> -->
-      <input type="email" name="email" placeholder="E-mail" size="30px"/>
-      <!-- <label for="contato">Contato</label> -->
-      <input type="text" name="contato" placeholder="N° do tel ou cel" size="30px"/>
+    <div id="inputs">
+      <div>
+        
+        <label for="nome">Nome </label>
+        <input type="text" name="nome"  />
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" maxlength="10"/>
+        <label for="email">E-mail</label>
+        <input type="email" name="email"  />
+        <label for="contato">Contato</label>
+        <input
+          type="text"
+          name="contato"   
+        />
+      </div>
+      <div>
+ 
+      </div>
+      <div>
+        <label for="rua">Endereço</label>
+        <input type="text" name="rua"  />
+        <label for="bairro">Bairro</label>
+        <input type="text" name="bairro"  />
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" p />
+        <label for="cep">Cep</label>
+        <input type="text" name="cep"  />
+      </div>
+
     </div>
-    <div class="endereco">
-      <!-- <label for="rua">Endereço</label> -->
-      <input type="text" name="rua" placeholder="Endereço" size="30px"/>
-      <!-- <label for="bairro">Bairro</label> -->
-      <input type="text" name="bairro" placeholder="Bairro"  size="30px"/>
-      <!-- <label for="cidade">Cidade</label> -->
-      <input type="text" name="cidade" placeholder="Cidade" size="30px"/>
-      <!-- <label for="cep">Cep</label> -->
-      <input type="text" name="cep" placeholder="Cep" size="30px"/>
+
+    <div class="genero">
       <select name="genero">
         <option value="">Selecione Gênero</option>
         <option value="M">M</option>
         <option value="F">F</option>
       </select>
     </div>
-    <div id="parte">
+
+    <div id="area">
       <textarea
         name="bio"
-        cols="30"
-        rows="10"
+        cols="100"
+        rows="2"
         placeholder="Já fez cursos?"
       ></textarea>
     </div>
-    
-    <div>
-      <label for="cursos">Qual curso quer fazer?</label><br>
+
+    <div class="cursos">
+      <p>Qual curso quer fazer?</p>
       <!-- Lembra que se não colocar o msm name ele escolhe várias vezes -->
+      <div>
       <input type="radio" name="curso" value="pacote office" />Pacote Office
       <input type="radio" name="curso" value="excel" />Excel
       <input type="radio" name="curso" value="windows" />Windows
       <input type="radio" name="curso" value="linux" />Linux
     </div>
-    
-    <div>
-      Conhece o instituto? <br>
-      <input type="checkbox" name="sim" />Sim
-      <input type="checkbox" name="nao" />Não
     </div>
-    <div>
-    <select name="escolaridade" multiple size="5">
-      <option value="efc">Ensino Fundamental Cursando</option>
-      <option value="efcom">Ensino Fundamental Completo</option>
-      <option value="emc">Ensino Médio cursando</option>
-      <option value="emcom">Ensino Médio Completo</option>
-      <option value="esc">Ensino Superior Cursando</option>
-      <option value="escom">Ensino Superior Completo</option>
-    </select>
-  </div>
-    <button>Inscrever</button>
-    <button>alterar</button>
-  
+
+    <div id="conhece">
+      <p> Conhece o instituto? </p>
+      Sim
+      <input type="checkbox" name="sim" />
+      Não
+      <input type="checkbox" name="nao" />
+    </div>
+
+    <div class="escolariedade">
+      <select multiple size="5">
+        <option value="efc">Ensino Fundamental Cursando</option>
+        <option value="efcom">Ensino Fundamental Completo</option>
+        <option value="emc">Ensino Médio cursando</option>
+        <option value="emcom">Ensino Médio Completo</option>
+        <option value="esc">Ensino Superior Cursando</option>
+        <option value="escom">Ensino Superior Completo</option>
+      </select>
+    </div>
+    <div class="btn">
+      <button>Inscrever</button>
+      <button>alterar</button>
+    </div>
   </form>
 </body>
