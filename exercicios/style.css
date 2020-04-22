@@ -7,9 +7,7 @@ body {
 
 
 .index {
-  min-width: 400px;
   text-align: center;
-  
 }
 
 h1 {
@@ -23,7 +21,7 @@ h1 {
 nav {
   display: inline-block;
   background-color: #fff;
-  min-width: 198px;
+  margin: 10px;
 }
 
 a {
